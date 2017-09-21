@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="VipLimits">
+        <item>非会员</item>
+        <item >3个月</item>
+        <item >6个月</item>
+        <item >12个月</item>
+    </array>
+</resources>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="2dp"
+    android:background="@color/colorLightGray"
+    android:showDividers="end"
+    android:divider="@color/colorPurple"
+    >
+
+    <RelativeLayout
+        android:id="@+id/histThumbFraLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:padding="1dp">
+
+        <ImageView
+            android:id="@+id/histThumbImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="2dp"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+
+            android:id="@+id/histVipImageView"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            app:srcCompat="@drawable/vip_icon"
+            android:visibility="invisible"
+            android:layout_marginEnd="8dp"
+            android:layout_alignRight="@id/histThumbImageView"
+            android:layout_alignTop="@id/histThumbImageView"
+            android:layout_marginTop="8dp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="1dp">
+
+        <TextView
+            android:id="@+id/histVideoNameTextView"
+            android:maxLines="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:padding="1dp"
+            android:text="Name"
+            android:textSize="7pt"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="3dp">
+
+            <TextView
+                android:id="@+id/histVideoPositionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Position"
+                android:textSize="6pt"/>
+
+            <TextView
+                android:id="@+id/histVideoDurationTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="/Duration"
+                android:textSize="6pt"/>
+
+            <TextView
+                android:id="@+id/histVideoSizeTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:text="Size"
+                android:textSize="6pt"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/lastTimeTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="com.example.srct.activities.LoginActivity">
+
+    <Button
+        android:id="@+id/LoginButton"
+        android:layout_width="184dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="59dp"
+        android:background="@color/colorLogin"
+        android:text="@string/Login"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintLeft_toLeftOf="@+id/PwdTextView"
+        app:layout_constraintRight_toRightOf="@+id/PwdEditText"
+        app:layout_constraintTop_toBottomOf="@+id/PwdEditText" />
+
+    <Button
+        android:id="@+id/resetLoginButton"
+        android:layout_width="184dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="134dp"
+        android:background="@color/colorLogin"
+        android:text="@string/reset"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintLeft_toLeftOf="@+id/PwdTextView"
+        app:layout_constraintRight_toRightOf="@+id/PwdEditText"
+        app:layout_constraintTop_toBottomOf="@+id/PwdEditText" />
+
+
+    <TextView
+        android:id="@+id/UserTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="130dp"
+        android:text="@string/UserName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/UserEditText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/PwdTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/Password"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/PwdEditText"
+        app:layout_constraintTop_toBottomOf="@+id/UserTextView" />
+
+    <EditText
+        android:id="@+id/UserEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="59dp"
+        android:layout_marginTop="114dp"
+        android:ems="10"
+        android:hint="@string/UserNameEn"
+        android:inputType="textEmailAddress"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/PwdEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="59dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="@string/PasswordEn"
+        android:inputType="textPassword"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UserEditText" />
+
+    <CheckedTextView
+        android:id="@+id/ForgotPwdCheckedTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="35dp"
+        android:clickable="true"
+        android:text="@string/ForgotThePassword"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resetLoginButton" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="三星视频管理系统"
+        android:textSize="11pt"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="@+id/UserEditText"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/UserTextView"/>
+
+</android.support.constraint.ConstraintLayout>

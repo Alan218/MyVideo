@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="com.example.srct.activities.UserManageActivity"
+    >
+
+
+    <Button
+        android:id="@+id/deleteUserButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="delete"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/userManageLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@color/colorLightGray"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/setAllCheckBox"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:visibility="gone"
+                />
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:text="编号"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="身份"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="用户名"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="昵称"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="期限"/>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/userManageListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:dividerHeight="0.5dp"
+            android:divider="@color/colorWhite"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="0dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

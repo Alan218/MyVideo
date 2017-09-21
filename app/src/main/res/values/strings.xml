@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">三星视频管理系统</string>
+    <string name="ForgotThePassword">忘记密码？</string>
+    <string name="Password">密码</string>
+    <string name="UserName">账号</string>
+    <string name="Login">登陆</string>
+    <string name="activity_user">用户信息</string>
+    <string name="VideoList">视频列表</string>
+    <string name="History">播放历史</string>
+    <string name="UserManage">用户\n管理</string>
+    <string name="VideoManage">视频管理</string>
+    <string name="VideoList_Update">更新视频列表</string>
+    <string name="title_activity_user_manage">管理账户</string>
+    <string name="VIP">VIP</string>
+    <string name="reset">重置</string>
+    <string name="UserNameEn">UserName</string>
+    <string name="PasswordEn">Password</string>
+    <string name="Add">添加</string>
+    <string name="ChangeUser">切换用户</string>
+    <string name="AboutApp">关于本应用</string>
+    <string name="ClearCache">清除历史播放记录</string>
+    <string name="Logout">退出并忘记用户</string>
+    <string name="Settings">设置</string>
+    <string name="Back">&#60;</string>
+</resources>
